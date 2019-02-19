@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Title</title>
+</head>
+<body>
+    잘돼냐 {{ name }}<br>
+    {{ cnt}} 방문자다<br>
+    <h2>나의 일기</h2>
+    {% for post in diary %}
+    <h4>{{ post }}</h4>
+    {% endfor %}
+
+</body>
+</html>

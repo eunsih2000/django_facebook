@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>page list</title>
+</head>
+<body>
+{% for page in pages %}
+
+<div style="border:1px solid #b2b2b2; padding:10px; margin: 10px;">
+{{ page.name }} - {{ page.master}} ({{ page.category }})<br>
+{{ page.text }}<br>
+- {{ page.created_at }}
+</div>
+
+{% endfor %}
+</body>
+</html>
